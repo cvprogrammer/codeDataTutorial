@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="coreDataTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="43V-Gv-8Ht">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Amx-Ne-ox2">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="v9v-aQ-RWD"/>
+                                </constraints>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="v9v-aQ-RWD"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="v9v-aQ-RWD"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="save:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3XD-7r-cZf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjo-Sv-qmr">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="gxU-ov-0p7"/>
+                                </constraints>
+                                <state key="normal" title="Load">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gxU-ov-0p7"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="gxU-ov-0p7"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="load:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HER-5z-CaF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXW-Hy-knf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="2wk-VT-e5h"/>
+                                </constraints>
+                                <state key="normal" title="Delete">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2wk-VT-e5h"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="2wk-VT-e5h"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="Delete:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="N8l-vV-K6F"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O0S-Wr-VPo">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GX1-De-2lc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="update">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Update:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6h5-Gg-VC7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yjo-Sv-qmr" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="6pd-Bz-Hso"/>
+                            <constraint firstItem="43V-Gv-8Ht" firstAttribute="leading" secondItem="O0S-Wr-VPo" secondAttribute="leading" id="9hB-Hy-9vw"/>
+                            <constraint firstItem="Yjo-Sv-qmr" firstAttribute="leading" secondItem="Amx-Ne-ox2" secondAttribute="trailing" constant="24" id="Gjf-qv-cgm"/>
+                            <constraint firstItem="GX1-De-2lc" firstAttribute="leading" secondItem="O0S-Wr-VPo" secondAttribute="trailing" constant="8" symbolic="YES" id="JZp-WB-SIn"/>
+                            <constraint firstItem="Yjo-Sv-qmr" firstAttribute="baseline" secondItem="43V-Gv-8Ht" secondAttribute="baseline" id="Qmn-5p-J1H"/>
+                            <constraint firstItem="GX1-De-2lc" firstAttribute="baseline" secondItem="O0S-Wr-VPo" secondAttribute="baseline" id="VtO-ks-g9h"/>
+                            <constraint firstItem="tXW-Hy-knf" firstAttribute="leading" secondItem="Yjo-Sv-qmr" secondAttribute="trailing" constant="21" id="dcz-zz-SZr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tXW-Hy-knf" secondAttribute="trailing" constant="26" id="eSU-7i-Ysm"/>
+                            <constraint firstItem="Amx-Ne-ox2" firstAttribute="baseline" secondItem="tXW-Hy-knf" secondAttribute="baseline" id="iCd-Sc-Mmo"/>
+                            <constraint firstItem="43V-Gv-8Ht" firstAttribute="top" secondItem="Amx-Ne-ox2" secondAttribute="top" id="lzw-QH-j5R"/>
+                            <constraint firstItem="GX1-De-2lc" firstAttribute="leading" secondItem="Amx-Ne-ox2" secondAttribute="leading" id="wxe-Hn-W1s"/>
+                            <constraint firstItem="Amx-Ne-ox2" firstAttribute="leading" secondItem="43V-Gv-8Ht" secondAttribute="trailing" constant="8" symbolic="YES" id="xeH-eq-2CG"/>
+                            <constraint firstItem="O0S-Wr-VPo" firstAttribute="top" secondItem="43V-Gv-8Ht" secondAttribute="bottom" constant="8" symbolic="YES" id="yfm-ju-XPr"/>
+                            <constraint firstItem="O0S-Wr-VPo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="zH8-rK-k0B"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="43V-Gv-8Ht"/>
+                                <exclude reference="Amx-Ne-ox2"/>
+                                <exclude reference="Yjo-Sv-qmr"/>
+                                <exclude reference="tXW-Hy-knf"/>
+                                <exclude reference="O0S-Wr-VPo"/>
+                                <exclude reference="GX1-De-2lc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9hB-Hy-9vw"/>
+                                <exclude reference="lzw-QH-j5R"/>
+                                <exclude reference="yfm-ju-XPr"/>
+                                <exclude reference="zH8-rK-k0B"/>
+                                <exclude reference="iCd-Sc-Mmo"/>
+                                <exclude reference="xeH-eq-2CG"/>
+                                <exclude reference="JZp-WB-SIn"/>
+                                <exclude reference="VtO-ks-g9h"/>
+                                <exclude reference="wxe-Hn-W1s"/>
+                                <exclude reference="6pd-Bz-Hso"/>
+                                <exclude reference="Gjf-qv-cgm"/>
+                                <exclude reference="Qmn-5p-J1H"/>
+                                <exclude reference="dcz-zz-SZr"/>
+                                <exclude reference="eSU-7i-Ysm"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="43V-Gv-8Ht"/>
+                                <include reference="Amx-Ne-ox2"/>
+                                <include reference="Yjo-Sv-qmr"/>
+                                <include reference="tXW-Hy-knf"/>
+                                <include reference="O0S-Wr-VPo"/>
+                                <include reference="GX1-De-2lc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9hB-Hy-9vw"/>
+                                <include reference="lzw-QH-j5R"/>
+                                <include reference="yfm-ju-XPr"/>
+                                <include reference="zH8-rK-k0B"/>
+                                <include reference="iCd-Sc-Mmo"/>
+                                <include reference="xeH-eq-2CG"/>
+                                <include reference="JZp-WB-SIn"/>
+                                <include reference="VtO-ks-g9h"/>
+                                <include reference="wxe-Hn-W1s"/>
+                                <include reference="6pd-Bz-Hso"/>
+                                <include reference="Gjf-qv-cgm"/>
+                                <include reference="Qmn-5p-J1H"/>
+                                <include reference="dcz-zz-SZr"/>
+                                <include reference="eSU-7i-Ysm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="name" destination="43V-Gv-8Ht" id="4Cj-4j-MiZ"/>
+                        <outlet property="newName" destination="O0S-Wr-VPo" id="zgu-ZH-SSK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
